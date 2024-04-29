@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
-<body background ="nature.avif">
-	
+<body background="nature.avif">
 
-<div class="card-container">
-	<span class="pro">PRO</span>
-	<img class="round" src="ali.jpg"  height="200px"           alt="user" />
-	<h3>Muhammad Ali</h3>
-	<h6>Karachi</h6>
-	<p class="text">User interface designer and <br/> front-end developer</p>
-	<div class="buttons">
-		<button class="primary" >
-			Visit Portfolio
-		</button>
-		<button class="primary ghost" >
-			Follow Me
-		</button>
-	</div>
-	<div class="skills">
-		<h6>Skills</h6>
-		<ul>
-			<li>UI / UX</li>
-			<li>Front End Development</li>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>React</li>
-			<li>Bootstrap</li>
-		</ul>
-	</div>
-</div>
+	<div class="card-container">
+		<span class="pro">PRO</span>
+		<img class="round" src="ali.jpg" height="200px" alt="user" />
+		<h3>Muhammad Ali</h3>
+		<h6>Karachi</h6>
+		<p class="text"><span id="element"></span></p>
 
+		<div class="buttons">
+			<a class="primary" href='https://my-portfolio-mu-gold.vercel.app/'><button class="primary">Visit
+					Portfolio</button></a>
+			<a class="primary ghost" href='https://www.linkedin.com/in/muhammad-ali-50159b2b1/'><button
+					class="primary">Follow Me</button></a>
+		</div>
+		<div class="skills">
+			<h6>Skills</h6>
+			<ul>
+				<li>UI / UX</li>
+				<li>Front End Development</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>React</li>
+				<li>Bootstrap</li>
+			</ul>
+		</div>
+	</div>
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed('#element', {
+			strings: [' User Interface Designer and <br/> Front-End Developer'],
+			typeSpeed: 60,
+		});
+	</script>
 
 </body>
+
 </html>
